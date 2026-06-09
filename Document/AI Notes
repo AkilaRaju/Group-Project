@@ -1,0 +1,97 @@
+# AI Notes – Ticket-to-FAQ Pipeline
+
+## Project Title
+
+AI-Powered Ticket-to-FAQ Pipeline
+
+## Objective
+
+The objective of this project is to automatically analyze closed customer support tickets, identify recurring issues, cluster similar tickets together, and generate FAQ drafts using Generative AI. This reduces manual effort in knowledge base creation and improves customer support efficiency.
+
+## Problem Statement
+
+Organizations receive a large number of support tickets daily. Many tickets describe similar issues, leading to repetitive work for support teams. Creating FAQs manually from these tickets is time-consuming and inefficient.
+
+## Proposed Solution
+
+The system collects closed support tickets from a CSV dataset, groups similar issues into clusters, and uses Google's Gemini AI to generate FAQ drafts. Administrators can review, approve, edit, and publish FAQs for future use.
+
+## Technologies Used
+
+* Python
+* Streamlit
+* SQLite
+* Pandas
+* Scikit-learn
+* Google Gemini API
+* GitHub
+
+## System Workflow
+
+1. Load closed ticket dataset.
+2. Preprocess ticket descriptions.
+3. Cluster similar tickets using machine learning.
+4. Generate FAQ drafts using Gemini AI.
+5. Admin reviews generated FAQs.
+6. Approved FAQs are published.
+7. Published FAQs become part of the knowledge base.
+
+## Features
+
+### Dashboard
+
+Displays:
+
+* Total Tickets
+* Closed Tickets
+* Clusters
+* FAQ Drafts
+* Published FAQs
+
+### Closed Tickets
+
+View all closed support tickets and their resolutions.
+
+### Clusters
+
+Groups similar support issues into categories.
+
+### FAQ Draft Generation
+
+Automatically creates FAQs from ticket clusters using Gemini AI.
+
+### Admin Review
+
+Allows approval, rejection, or modification of generated FAQs.
+
+### Published FAQs
+
+Stores approved FAQs and supports export functionality.
+
+### Customer Portal
+
+Simulates customer ticket submission.
+
+### Support Panel
+
+Simulates support staff resolving and closing tickets.
+
+## Advantages
+
+* Reduces manual FAQ creation.
+* Improves support efficiency.
+* Detects recurring issues automatically.
+* Provides AI-generated knowledge base content.
+* Easy-to-use web interface.
+
+## Future Enhancements
+
+* Real-time ticket integration.
+* Multi-language FAQ generation.
+* Vector database integration.
+* Advanced semantic clustering.
+* Automated FAQ publishing workflows.
+
+## Conclusion
+
+The Ticket-to-FAQ Pipeline demonstrates how Artificial Intelligence and Machine Learning can transform customer support operations by automatically converting recurring support tickets into a structured FAQ knowledge base.
