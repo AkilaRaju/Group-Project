@@ -1,0 +1,51 @@
+ticket_id,issue,resolution,status
+101,VPN not connecting,Restart VPN client and verify credentials,Closed
+102,VPN login failed,Check username and password,Closed
+103,Cannot access VPN,Verify internet connectivity,Closed
+104,VPN authentication error,Reset VPN credentials,Closed
+105,VPN connection timeout,Restart VPN service,Closed
+106,Forgot password,Use forgot password option,Closed
+107,Password reset link not working,Request a new reset link,Closed
+108,Unable to change password,Clear browser cache and retry,Closed
+109,Password expired,Create a new password,Closed
+110,Reset password email not received,Check spam folder,Closed
+111,Login failed,Verify username and password,Closed
+112,Cannot login to portal,Reset account credentials,Closed
+113,Account locked after attempts,Unlock account through admin,Closed
+114,Login page not loading,Clear browser cache,Closed
+115,Invalid login credentials,Verify account information,Closed
+116,Email not receiving messages,Check mailbox storage,Closed
+117,Outlook not syncing,Restart Outlook client,Closed
+118,Unable to send email,Verify SMTP settings,Closed
+119,Email attachment not opening,Download attachment again,Closed
+120,Mailbox full,Delete unnecessary emails,Closed
+121,Payment failed,Verify card details,Closed
+122,Transaction declined,Contact bank support,Closed
+123,Payment gateway timeout,Retry payment later,Closed
+124,Refund not received,Check refund processing status,Closed
+125,Duplicate payment detected,Raise refund request,Closed
+126,Software installation failed,Run installer as administrator,Closed
+127,Application not installing,Check system requirements,Closed
+128,Installation stuck at 50 percent,Restart installation process,Closed
+129,Missing installation files,Download installer again,Closed
+130,Installer crashed unexpectedly,Reinstall application,Closed
+131,Network connection slow,Restart router,Closed
+132,Unable to access website,Check DNS settings,Closed
+133,Network disconnected frequently,Inspect network cables,Closed
+134,WiFi not connecting,Reconnect wireless network,Closed
+135,Internet unavailable,Restart modem,Closed
+136,Printer not printing,Restart printer service,Closed
+137,Printer offline,Reconnect printer to network,Closed
+138,Unable to scan documents,Install scanner drivers,Closed
+139,Paper jam error,Remove jammed paper,Closed
+140,Printer driver missing,Install latest printer driver,Closed
+141,System running slow,Close background applications,Closed
+142,Computer freezes frequently,Update operating system,Closed
+143,High CPU usage,Identify resource intensive process,Closed
+144,Low disk space,Delete unnecessary files,Closed
+145,System startup delay,Disable unnecessary startup programs,Closed
+146,File upload failed,Check file size limits,Closed
+147,Document download error,Retry download operation,Closed
+148,Access denied to shared folder,Verify permissions,Closed
+149,Unable to open PDF files,Install PDF reader,Closed
+150,File synchronization failed,Restart sync service,Closed
