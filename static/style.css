@@ -1,0 +1,124 @@
+/* style.css - Premium dark theme with gradient and glass‑morphism */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Global settings */
+html, body, [data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #0f0f1a, #151528) !important;
+    color: #e2e8f0 !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Sidebar Custom Background */
+[data-testid="stSidebar"] {
+    background-color: #0b0b14 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Sidebar menu titles and sections */
+.sidebar-section {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #5a6578;
+    margin-top: 1.5rem;
+    margin-bottom: 0.4rem;
+    padding-left: 12px;
+    letter-spacing: 0.08em;
+}
+
+/* Sidebar menu items (buttons) */
+[data-testid="stSidebar"] .stButton button {
+    width: 100% !important;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    color: #94a3b8 !important;
+    text-align: left !important;
+    padding: 0.6rem 1rem !important;
+    border-radius: 8px !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+    box-shadow: none !important;
+    display: block !important;
+}
+
+[data-testid="stSidebar"] .stButton button:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Glass‑morphism cards */
+.card, div[data-testid="stForm"], div.stForm, div[data-testid="stVerticalBlockBorder"] {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-radius: 12px !important;
+    padding: 1.25rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover, div[data-testid="stForm"]:hover, div.stForm:hover, div[data-testid="stVerticalBlockBorder"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* KPI metric cards */
+.metric-card {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-radius: 12px !important;
+    padding: 1.25rem !important;
+    text-align: left !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+.metric-card:hover {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    transform: translateY(-2px);
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #4e44ff, #6e68ff) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1.2rem !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 15px rgba(78, 68, 255, 0.25) !important;
+}
+.stButton > button:hover {
+    background: linear-gradient(135deg, #6e68ff, #8a84ff) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(78, 68, 255, 0.35) !important;
+}
+
+/* Tables styling */
+.stDataFrame {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

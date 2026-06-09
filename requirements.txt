@@ -1,0 +1,7 @@
+# requirements.txt
+streamlit>=1.30
+pandas
+scikit-learn
+python-dotenv
+altair
+requests
