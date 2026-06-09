@@ -22,6 +22,8 @@ def get_all_closed_tickets():
 
 # ---------- FAQ draft helpers ----------
 def insert_faq_draft(question: str, answer: str, source_ticket_ids, cluster_id: int, confidence_score: int):
+    cluster_id = int(cluster_id)
+    confidence_score = int(confidence_score)
     conn = get_connection()
     cur = conn.cursor()
     cur.execute(
@@ -38,6 +40,7 @@ def get_faq_drafts_by_status(status: str):
     return df
 
 def update_faq_draft(faq_id: int, question: str = None, answer: str = None, status: str = None):
+    faq_id = int(faq_id)
     conn = get_connection()
     cur = conn.cursor()
     if question is not None:
@@ -54,6 +57,7 @@ def update_faq_draft(faq_id: int, question: str = None, answer: str = None, stat
     conn.close()
 
 def publish_faq(faq_id: int):
+    faq_id = int(faq_id)
     conn = get_connection()
     cur = conn.cursor()
     # Copy to published_faqs table (idempotent replace) including confidence_score
@@ -97,6 +101,7 @@ def get_open_tickets():
     return df
 
 def close_ticket(ticket_id: int, resolution: str):
+    ticket_id = int(ticket_id)
     import datetime
     closed_at = datetime.datetime.now().strftime("%d %b %Y, %I:%M %p")
     conn = get_connection()

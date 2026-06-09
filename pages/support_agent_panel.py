@@ -111,9 +111,12 @@ def render():
                 st.error("Please enter a resolution description before marking the ticket as closed.")
                 return
                 
-            close_ticket(sel_id, resolution_input.strip())
-            st.success(f"🎉 Ticket TKT-{sel_id} has been marked as Closed!")
-            st.rerun()
+            try:
+                close_ticket(sel_id, resolution_input.strip())
+                st.success(f"🎉 Ticket TKT-{sel_id} has been marked as Closed!")
+                st.rerun()
+            except Exception as e:
+                st.error(f"Error closing ticket: {e}")
 
 if __name__ == "__main__":
     render()
